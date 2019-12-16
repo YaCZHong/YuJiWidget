@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--坐标轴线条粗细-->
+    <attr name="coordinatesLineWidth" format="dimension" />
+    <!--坐标轴线条颜色-->
+    <attr name="coordinatesLineColor" format="color" />
+    <!--坐标轴字体大小-->
+    <attr name="coordinatesTextSize" format="dimension" />
+    <!--坐标轴字体颜色-->
+    <attr name="coordinatesTextColor" format="color" />
+
+
+    <!--曲线颜色-->
+    <attr name="lineColor" format="color" />
+    <!--曲线宽度-->
+    <attr name="lineWidth" format="dimension" />
+    <!--曲线字体大小-->
+    <attr name="lineTextSize" format="dimension" />
+    <!--曲线字体颜色-->
+    <attr name="lineTextColor" format="color" />
+
+
+    <!--小圆点大圆半径-->
+    <attr name="maxCircleRadius" format="dimension" />
+    <!--小圆点大圆颜色-->
+    <attr name="maxCircleColor" format="color" />
+    <!--小圆点小圆半径-->
+    <attr name="minCircleRadius" format="dimension" />
+    <!--小圆点小圆颜色-->
+    <attr name="minCircleColor" format="color" />
+
+    <!--小圆点垂线颜色-->
+    <attr name="verticalLineColor" format="color" />
+    <!--小圆点垂线宽度-->
+    <attr name="verticalLineWidth" format="dimension" />
+
+    <!--图表背景颜色-->
+    <attr name="backgroundColor" format="color" />
+
+    <declare-styleable name="Line">
+        <attr name="coordinatesLineWidth" />
+        <attr name="coordinatesLineColor" />
+        <attr name="coordinatesTextSize" />
+        <attr name="coordinatesTextColor" />
+        <attr name="lineWidth" />
+        <attr name="lineColor" />
+        <attr name="lineTextSize" />
+        <attr name="lineTextColor" />
+        <attr name="maxCircleRadius" />
+        <attr name="maxCircleColor" />
+        <attr name="minCircleRadius" />
+        <attr name="minCircleColor" />
+        <attr name="verticalLineColor" />
+        <attr name="verticalLineWidth" />
+        <attr name="backgroundColor" />
+    </declare-styleable>
+
+</resources>
