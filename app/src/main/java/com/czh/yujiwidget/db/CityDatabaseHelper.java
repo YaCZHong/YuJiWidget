@@ -12,8 +12,9 @@ public class CityDatabaseHelper extends SQLiteOpenHelper {
 
     private static final String CREATE_CITY = "create table City ("
             + "id integer primary key autoincrement, "
-            + "city text, "
-            + "cityId text)";
+            + "cityName text, "
+            + "cityParent text, "
+            + "cityLocation text)";
 
     public CityDatabaseHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);

@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cv_hourly"
     android:layout_width="match_parent"
-    android:layout_height="220dp"
+    android:layout_height="wrap_content"
     android:layout_marginStart="8dp"
-    android:layout_marginTop="8dp"
+    android:layout_marginTop="4dp"
     android:layout_marginEnd="8dp"
     android:layout_marginBottom="4dp"
     app:cardBackgroundColor="#ffffff"
@@ -14,48 +14,252 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="8dp"
-            android:paddingTop="12dp"
-            android:paddingBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
             android:text="逐三小时天气"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:textColor="@color/colorTextDark" />
+            android:textColor="@color/colorTextDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:background="@color/colorF4F4F4"/>
+            android:background="@color/colorF4F4F4" />
 
-        <com.czh.yujiwidget.view.Line
-            android:id="@+id/line"
+        <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:paddingStart="8dp"
-            android:paddingTop="16dp"
-            android:paddingEnd="8dp"
-            android:paddingBottom="12dp"
-            app:coordinatesLineColor="#44000000"
-            app:coordinatesLineWidth="0.5dp"
-            app:coordinatesTextColor="#aa000000"
-            app:coordinatesTextSize="12sp"
-            app:lineColor="#000000"
-            app:lineTextColor="#aa000000"
-            app:lineTextSize="13sp"
-            app:lineWidth="2dp"
-            app:maxCircleColor="#000000"
-            app:maxCircleRadius="2.5dp"
-            app:minCircleColor="#ffffff"
-            app:minCircleRadius="2dp"
-            app:verticalLineColor="#20000000"
-            app:verticalLineWidth="0.5dp" />
+            android:layout_height="260dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="560dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_hour1_state"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="--/--"
+                        android:textColor="@color/colorTextDark2nd"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hour2_state"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="--/--"
+                        android:textColor="@color/colorTextDark2nd"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hour3_state"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="--/--"
+                        android:textColor="@color/colorTextDark2nd"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hour4_state"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="--/--"
+                        android:textColor="@color/colorTextDark2nd"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hour5_state"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="--/--"
+                        android:textColor="@color/colorTextDark2nd"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hour6_state"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="--/--"
+                        android:textColor="@color/colorTextDark2nd"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hour7_state"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="--/--"
+                        android:textColor="@color/colorTextDark2nd"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hour8_state"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="--/--"
+                        android:textColor="@color/colorTextDark2nd"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="560dp"
+                    android:layout_height="36dp"
+                    android:orientation="horizontal"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp">
+
+                    <ImageView
+                        android:id="@+id/iv_hour1_state"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="7dp"
+                        android:src="@mipmap/icon_999n" />
+
+                    <ImageView
+                        android:id="@+id/iv_hour2_state"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="7dp"
+                        android:src="@mipmap/icon_999n" />
+
+                    <ImageView
+                        android:id="@+id/iv_hour3_state"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="7dp"
+                        android:src="@mipmap/icon_999n" />
+
+                    <ImageView
+                        android:id="@+id/iv_hour4_state"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="7dp"
+                        android:src="@mipmap/icon_999n" />
+
+                    <ImageView
+                        android:id="@+id/iv_hour5_state"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="7dp"
+                        android:src="@mipmap/icon_999n" />
+
+                    <ImageView
+                        android:id="@+id/iv_hour6_state"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="7dp"
+                        android:src="@mipmap/icon_999n" />
+
+                    <ImageView
+                        android:id="@+id/iv_hour7_state"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="7dp"
+                        android:src="@mipmap/icon_999n" />
+
+                    <ImageView
+                        android:id="@+id/iv_hour8_state"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="7dp"
+                        android:src="@mipmap/icon_999n" />
+                </LinearLayout>
+
+                <com.czh.yujiwidget.view.Line
+                    android:id="@+id/line"
+                    android:layout_width="560dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:paddingStart="16dp"
+                    android:paddingTop="30dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="16dp"
+                    app:coordinatesLineColor="#44000000"
+                    app:coordinatesLineWidth="1dp"
+                    app:coordinatesTextColor="#aa000000"
+                    app:coordinatesTextSize="13sp"
+                    app:lineColor="#212121"
+                    app:lineTextColor="@color/colorTextDark"
+                    app:lineTextSize="14sp"
+                    app:lineWidth="3dp"
+                    app:maxCircleColor="#000000"
+                    app:maxCircleRadius="3.3dp"
+                    app:minCircleColor="#ffffff"
+                    app:minCircleRadius="2.3dp"
+                    app:verticalLineColor="#20000000"
+                    app:verticalLineWidth="1dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorF4F4F4" />
+
+        <RelativeLayout
+            android:id="@+id/rl_hourly_more"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_hourly_more"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="查看更多信息"
+                android:textColor="@color/colorTextDark"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/tv_hourly_more"
+                android:padding="4dp"
+                android:src="@mipmap/ic_right" />
+        </RelativeLayout>
+
     </LinearLayout>
 </androidx.cardview.widget.CardView>

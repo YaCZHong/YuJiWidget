@@ -1,0 +1,81 @@
+<resources>
+    <!--    notification-->
+    <string-array name="notification_style">
+        <item>普通</item>
+        <item>详细</item>
+    </string-array>
+
+    <string-array name="notification_style_values">
+        <item>Normal</item>
+        <item>Detail</item>
+    </string-array>
+
+    <string-array name="notification_color">
+        <item>亮色</item>
+        <item>暗色</item>
+    </string-array>
+
+    <string-array name="notification_color_values">
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+
+    <!--    service-->
+    <string-array name="service_frequency">
+        <item>半个小时</item>
+        <item>一个小时</item>
+        <item>两个小时</item>
+        <item>四个小时</item>
+        <item>八个小时</item>
+    </string-array>
+
+    <string-array name="service_frequency_values">
+        <item>Half_An_Hour</item>
+        <item>An_Hour</item>
+        <item>Two_Hours</item>
+        <item>Four_Hours</item>
+        <item>Eight_Hours</item>
+    </string-array>
+
+    <string-array name="service_way">
+        <item>JobScheduler</item>
+        <item>AlarmManager</item>
+    </string-array>
+
+    <string-array name="service_way_values">
+        <item>JobScheduler</item>
+        <item>AlarmManager</item>
+    </string-array>
+
+    <string-array name="service_pattern">
+        <item>小部件城市</item>
+        <item>所有城市</item>
+    </string-array>
+
+    <string-array name="service_pattern_values">
+        <item>Widget_City</item>
+        <item>All_City</item>
+    </string-array>
+
+    <!--    widget-->
+    <string-array name="widget_color">
+        <item>亮色</item>
+        <item>暗色</item>
+    </string-array>
+
+    <string-array name="widget_color_values">
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+
+    <!--    icon-->
+    <string-array name="icon_style">
+        <item>普通</item>
+        <item>Pixel</item>
+    </string-array>
+
+    <string-array name="icon_style_values">
+        <item>Normal</item>
+        <item>Pixel</item>
+    </string-array>
+</resources>

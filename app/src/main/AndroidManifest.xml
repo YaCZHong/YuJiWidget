@@ -1,54 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.czh.yujiwidget">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:maxAspectRatio="2.4"
-        android:resizeableActivity="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b9e673d4bca70122962b4bb1a460c5c0" />
+        <service android:name="com.amap.api.location.APSService"></service>
 
+        <activity android:name=".activity.PrivacyPolicyActivity"></activity>
         <activity
-            android:name=".activity.WeatherDetailActivity"
-            android:theme="@style/AppTheme_WeatherDetail">
-        </activity>
-
-        <meta-data
-            android:name="android.max_aspect"
-            android:value="2.4" /> <!-- 适配华为（huawei）刘海屏 -->
-        <meta-data
-            android:name="android.notch_support"
-            android:value="true" /> <!-- 适配小米（xiaomi）刘海屏 -->
-        <meta-data
-            android:name="notch.config"
-            android:value="portrait|landscape" />
-
-        <activity android:name=".activity.WidgetSettingActivity">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
-            </intent-filter>
-        </activity>
-
-        <receiver android:name=".widget.TheFirstWidget">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/the_first_widget_info" />
-        </receiver>
-
+            android:name=".activity.SearchCityActivity"
+            android:theme="@style/SearchTheme"
+            android:label="添加城市" />
+        <activity
+            android:name=".activity.CitiesActivity"
+            android:label="城市列表" />
         <activity
             android:name=".activity.MainActivity"
-            android:label="城市列表"
-            android:theme="@style/AppTheme">
+            android:launchMode="singleTask"
+            android:theme="@style/MainTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

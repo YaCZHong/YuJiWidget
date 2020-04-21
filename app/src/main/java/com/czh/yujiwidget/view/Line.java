@@ -181,7 +181,7 @@ public class Line extends View {
         values.add(0f);
         values.add(0f);
 
-        setLayerType(LAYER_TYPE_SOFTWARE, null); //如果需要阴影，则需要关闭硬件加速
+        //setLayerType(LAYER_TYPE_SOFTWARE, null); //如果需要阴影，则需要关闭硬件加速
 
         mCoordinatesLinePaint = new Paint();
         mCoordinatesLinePaint.setAntiAlias(true);
@@ -202,7 +202,7 @@ public class Line extends View {
         mLinePaint.setColor(mLineColor);
         mLinePaint.setStrokeWidth(mLineWidth);
         mLinePaint.setStyle(Paint.Style.STROKE);
-        mLinePaint.setShadowLayer(dp2px(3), dp2px(0), dp2px(2), Color.parseColor("#88000000"));
+//        mLinePaint.setShadowLayer(dp2px(3), dp2px(0), dp2px(2), Color.parseColor("#88000000"));
 
         mLineTextPaint = new Paint();
         mLineTextPaint.setAntiAlias(true);
@@ -211,7 +211,7 @@ public class Line extends View {
         mLineTextPaint.setTextAlign(Paint.Align.CENTER);// 设置文本的对齐方式
         mLineTextPaint.setFakeBoldText(true);// 设置粗字体
         mLineTextPaint.setStyle(Paint.Style.FILL);
-        mLineTextPaint.setShadowLayer(dp2px(3), dp2px(0), dp2px(2), Color.parseColor("#44000000"));
+//        mLineTextPaint.setShadowLayer(dp2px(3), dp2px(0), dp2px(2), Color.parseColor("#44000000"));
 
         minCirclePaint = new Paint();
         minCirclePaint.setAntiAlias(true);
